@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Text', sans-serif;
+}
+
+:root {
+    --grayish-blue: hsl(237, 18%, 59%);
+    --soft-red: hsl(345, 95%, 68%);
+    --white: hsl(0, 0%, 100%);
+    --dark-desaturated-blue: hsl(236, 21%, 26%);
+    --very-dark-blue: hsl(235, 16%, 14%);
+    --mostly-black: hsl(234, 17%, 12%);
+}
+
+.main-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    min-height: 100vh;
+    background-color: var(--mostly-black);
+    background-image: url(../images/bg-stars.svg);
+    background-repeat: no-repeat;
+    background-position: top, bottom;
+    background-size: 85%, 100%;
+}
+  
+.launching-title{
+    padding:16px; 
+    text-transform: uppercase;
+    text-align: center;
+    color:var(--white);;
+    letter-spacing: 0.5rem;
+}
+
+.countdown-container{
+    padding:16px; 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.count-number-col-container{
+    width: 33%;
+    padding: 2em;
+    justify-content: center;
+    text-align: center;
+}
+
+.count-number-container{
+    position: relative;
+    height: 125px;
+    width: 140px;
+    text-align: center;
+}
+
+.count-top {
+    top: 0;
+    opacity: 0.5;
+    height: 50%;
+    width: 100%;
+    background-color: var(--dark-desaturated-blue);
+    border-radius: 10px;
+}
+
+.count-bottom {
+    top: 50%;
+    box-shadow: 0px 10px var(--very-dark-blue);
+    height: 50%;
+    width: 100%;
+    background-color: var(--dark-desaturated-blue);
+    border-radius: 10px;
+}
+
+.count-left-circle {
+    left: -5%;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--mostly-black);
+}
+
+.count-right-circle {
+    right: -5%;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--mostly-black);
+}
+
+.count-horizontal-bar {
+    position: absolute;
+    height: 1px;
+    width: 89%;
+    background-color: var(--mostly-black);
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5%;
+    opacity: 0.5;
+}
+
+.count-number{
+    position: absolute;
+    font-size: 5rem;
+    color: var(--soft-red);
+    z-index: 2;
+    width: 100%;
+    top: 15%;
+    left: 0%;
+}
+
+.count-number-title {
+    margin-top: 2em;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--grayish-blue);
+    font-size: 0.9rem;
+}
+
+.footer-container{
+    position: absolute;
+    bottom:0;
+    background-image: url(../images/pattern-hills.svg);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    background-size: 100vw 24vh;
+    min-height: 24vh;
+}
+
+.social-icon-container{
+    position: absolute;
+    top: 50%;
+}
+
+.social-icon{
+    padding: 1rem;
+    font-size: 2rem;
+}
